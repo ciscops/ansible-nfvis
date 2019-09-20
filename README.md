@@ -8,7 +8,7 @@ This is a hybrid role that contains the following modules:
 - nfvis_bridge
 - nfvis_network
 - nfvis_vlan
-- nfvis_depoloyment
+- nfvis_deployment
 - nfvis_package
 
 To use this role, clone it into your `roles` directory:
