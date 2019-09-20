@@ -117,7 +117,7 @@ def main():
                 response = nfvis.request(url_path, method='POST', payload=json.dumps(payload))
             nfvis.result['changed'] = True
     else:
-        if nfvis.params['name'] in vlan_dict:
+        if nfvis.params['vlan_id'] in vlan_dict:
             url = '/running/switch/vlan/{0}'.format(nfvis.params['vlan_id'])
             if not module.check_mode:
                 response = nfvis.request(url, 'DELETE')
